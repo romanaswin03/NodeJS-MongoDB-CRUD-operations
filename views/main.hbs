@@ -36,7 +36,7 @@
 
     <ul>
         {{#each books}}
-        <li> {{this.title}} - {{this.author}} </li>
+        <li> {{this.title}} - {{this.author}} <a href="/?edit_id={{this._id}}">Edit  </a><a href="/?delete_id={{this._id}}" onclick="return confirm('Are you sure to delete this?')">Delete</a></li>
         {{/each}}
     </ul>
 </body>
